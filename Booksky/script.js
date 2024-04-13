@@ -31,6 +31,9 @@ addd.addEventListener("click",function(event){
     ccontainer.append(div)
     popupoverlay.style.display="none"
     popupbox.style.display="none"
+    document.getElementById("Author-name").value = "";
+    document.getElementById("book-name").value = "";
+    document.getElementById("book-description").value = "";
 })
 function deleteclick(event){
     event.target.parentElement.remove()
