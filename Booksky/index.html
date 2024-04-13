@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>BOOKSKY</h1>
+    </div>
+    <div class="container">
+        <div class="bookcontainer">
+            <h2>The Giver</h2>
+            <h5>Lois Lowry</h5>
+            <p>The Giver is a 1993 American young adult dystopian novel written by Lois Lowry.In an effort to preserve
+                order, the society also lacks any color, climate, terrain, and a true sense of equality. The protagonist
+                of the story, a 12-year-old boy named Jonas, is selected to inherit the position of Receiver of Memory,
+                the person who stores all the memories of the time before Sameness. Jonas struggles with concepts of the
+                new emotions and things introduced to him, and whether they are inherently good, evil, or in between,
+                and whether it is possible to have one without the other.</p>
+            <button onclick="deleteclick(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-name">
+            <input type="text" placeholder="Author Name" id="Author-name">
+            <textarea placeholder="Description of the book" id="book-description"></textarea>
+            <button id="add">ADD</button>
+            <button id="cancel">CANCEL</button>
+        </form>
+    </div>
+<button class="add-button" id="pop-addbutton">+</button>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
